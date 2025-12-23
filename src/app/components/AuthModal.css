@@ -1,0 +1,102 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #4a5568;
+  line-height: 1;
+}
+
+.modal-content h2 {
+  margin: 0 0 1.5rem 0;
+  color: #2c5282;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.form-group input {
+  padding: 0.75rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2c5282;
+}
+
+.btn-submit {
+  padding: 0.75rem;
+  background: #2c5282;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.btn-submit:hover {
+  background: #2a4365;
+}
+
+.toggle-mode {
+  text-align: center;
+  margin-top: 1rem;
+  color: #4a5568;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #2c5282;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.link-button:hover {
+  color: #2a4365;
+}

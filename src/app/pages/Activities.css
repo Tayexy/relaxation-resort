@@ -1,0 +1,112 @@
+.activities-page {
+  min-height: 100vh;
+}
+
+.activities-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.activity-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.activity-card:hover {
+  transform: translateY(-5px);
+}
+
+.activity-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.activity-content {
+  padding: 1.5rem;
+}
+
+.activity-content h3 {
+  color: #2c5282;
+  margin-bottom: 0.5rem;
+}
+
+.activity-content p {
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.activity-details {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.detail {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.detail strong {
+  color: #2c5282;
+}
+
+.evening-entertainment {
+  background: linear-gradient(135deg, #2c5282 0%, #2a4365 100%);
+  padding: 3rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.evening-entertainment h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.entertainment-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.entertainment-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.entertainment-item h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.entertainment-item p {
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .activities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .entertainment-list {
+    grid-template-columns: 1fr;
+  }
+}

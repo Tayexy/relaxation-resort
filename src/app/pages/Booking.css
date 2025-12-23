@@ -1,0 +1,176 @@
+.booking-page {
+  min-height: 100vh;
+}
+
+.booking-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.booking-form-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form-section h2 {
+  color: #2c5282;
+  margin-bottom: 1.5rem;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2c5282;
+}
+
+.form-group textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.btn-book {
+  padding: 1rem;
+  background: #2c5282;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-book:hover {
+  background: #2a4365;
+}
+
+.booking-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.booking-info-section h3 {
+  color: #2c5282;
+  margin-bottom: 1rem;
+}
+
+.included-list {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+}
+
+.included-list li {
+  padding: 0.75rem 0;
+  color: #4a5568;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.included-list li:last-child {
+  border-bottom: none;
+}
+
+.included-list li::before {
+  content: '✓ ';
+  color: #2c5282;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.cancellation-policy,
+.need-help {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cancellation-policy p,
+.need-help p {
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+.booking-success {
+  max-width: 600px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  background: #48bb78;
+  color: white;
+  font-size: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.booking-success h2 {
+  color: #2c5282;
+  margin-bottom: 1rem;
+}
+
+.booking-success p {
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+@media (max-width: 968px) {
+  .booking-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
