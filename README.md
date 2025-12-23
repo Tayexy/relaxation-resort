@@ -1,11 +1,41 @@
 
-  # Hotel Booking Web App
+  🏨 Hotel Booking App
 
-  This is a code bundle for Hotel Booking Web App. The original project is available at https://www.figma.com/design/uNUzGM57ce6Iq2AaADXd15/Hotel-Booking-Web-App.
 
-  ## Running the code
+#A modern hotel booking web application built with Vite and React, designed to allow users to explore rooms, view details, and make reservations easily.
 
-  Run `npm i` to install the dependencies.
+🚀 Features
 
-  Run `npm run dev` to start the development server.
+Browse available hotel rooms
+
+View room details and pricing
+
+Responsive design (mobile, tablet, desktop)
+
+Fast performance with Vite
+
+Clean and modern UI
+
+🛠️ Built With
+
+React
+
+Vite
+
+JavaScript / TypeScript
+
+CSS / Tailwind 
+
+Installation 
+
+git clone https://github.com/Tayexy/relaxation-resort.git
+cd relaxation-resort
+npm install
+npm run dev
+
+👤 Author
+
+Taiye Goodness
+GitHub: https://github.com/Tayexy
+
   
